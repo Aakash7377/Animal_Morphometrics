@@ -1,0 +1,30 @@
+__pycache__/
+*.pyc
+
+venv/
+.venv/
+
+.env
+
+.vscode/
+.idea/
+
+.DS_Store
+
+# Models
+*.pth
+*.pt
+
+# Datasets
+dataset/
+datasets/
+data/
+raw/
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
