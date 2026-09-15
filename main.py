@@ -19,8 +19,7 @@ app = FastAPI(
     version="2.0.0"
 )
 
-
-
+//Ui enhancement
 
 BASE_DIR = os.path.dirname(
     os.path.abspath(__file__)
