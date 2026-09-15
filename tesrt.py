@@ -1,6 +1,6 @@
 import os
 
-folder_path = "dataset/raw/sahiwal"
+folder_path = "dataset/raw/Cattle Breeds/Brown Swiss cattle"
 
 images = [
     file for file in os.listdir(folder_path)

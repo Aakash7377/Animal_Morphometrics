@@ -3,10 +3,10 @@ import random
 import shutil
 
 # Source folder containing 300 images
-source_folder = "dataset/cleaned/tharparkar"
+source_folder = "dataset/raw/Cattle Breeds/Ayrshire cattle"
 
 # Destination folder
-destination_folder = "dataset/test/tharparkar"
+destination_folder = "dataset/test/Ayrshire cattle"
 
 # Create destination folder if it doesn't exist
 os.makedirs(destination_folder, exist_ok=True)

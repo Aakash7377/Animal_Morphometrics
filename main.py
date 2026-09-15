@@ -9,9 +9,6 @@ from PIL import Image
 from predict import predict
 
 
-# =========================
-# FASTAPI APP
-# =========================
 
 app = FastAPI(
     title="Cattle Breed Prediction API",
@@ -23,9 +20,7 @@ app = FastAPI(
 )
 
 
-# =========================
-# DIRECTORY PATHS
-# =========================
+
 
 BASE_DIR = os.path.dirname(
     os.path.abspath(__file__)
@@ -65,16 +60,12 @@ ALLOWED_EXTENSIONS = {
 }
 
 
-# =========================
+
 # HOME PAGE
-# =========================
 
-@app.get(
-    "/",
-    response_class=HTMLResponse
-)
+
+@app.get("/",response_class=HTMLResponse)
 async def get_index():
-
     index_path = os.path.join(
         TEMPLATES_DIR,
         "index.html"
@@ -258,11 +249,10 @@ async def predict_image(
 # =========================
 
 if __name__ == "__main__":
-
     import uvicorn
 
     uvicorn.run(
-        "app:app",
+        "main:app",
         host="127.0.0.1",
         port=8000,
         reload=True
